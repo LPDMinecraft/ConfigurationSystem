@@ -1,0 +1,11 @@
+mama: [map_top]
+    test: [map_top]
+        de: [int] 3
+        de2: [int] 7
+        lol: [int] 6
+luckperms: [map_top]
+    test: [int] 5
+    banane: [str] Test1
+    array: [map_top]
+        test: [int] 1
+        str1: [str] Test2
