@@ -2,6 +2,6 @@ package de.lcraft.configurationSystem.mysql;
 
 public interface Command {
 
-    String createSQL(MySQLDataBase mySQLDataBase);
+    String[] createSQL(MySQLDataBase mySQLDataBase);
 
 }

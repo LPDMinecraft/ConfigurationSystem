@@ -22,7 +22,7 @@ public class createTable implements Command {
     }
 
     @Override
-    public String createSQL(MySQLDataBase mySQLDataBase) {
+    public String[] createSQL(MySQLDataBase mySQLDataBase) {
         String sql = "CREATE TABLE " + getTableName() + " (";
 
         for(String[] c : getData()) {
@@ -32,7 +32,7 @@ public class createTable implements Command {
             sql = sql + id + " " + type + ",";
         }
 
-        return MySQLServer.replaceEnd(sql, ",", "") + ")";
+        return new String[]{MySQLServer.replaceEnd(sql, ",", "") + ")"};
     }
 
     public String getTableName() {

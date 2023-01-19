@@ -41,6 +41,15 @@ public class MySQLDataBase {
             throw new RuntimeException(e);
         }
     }
+    public void execute(String[] sqlArray) throws SQLException {
+        if(isConnected()) {
+            for(String sql : sqlArray) {
+                execute(sql);
+            }
+        } else {
+            throw new SQLException("No connection to the MySQL Database: " + System.lineSeparator() + this);
+        }
+    }
     public void execute(String sql) throws SQLException {
         if(isConnected()) {
             Statement statement = getConnection().createStatement();
@@ -68,6 +77,13 @@ public class MySQLDataBase {
     }
     public Connection getConnection() {
         return connection;
+    }
+    @Override
+    public String toString() {
+        return "MySQLDataBase{" +
+                "mySQLServer=" + mySQLServer +
+                ", databaseName='" + databaseName + '\'' +
+                '}';
     }
 
 }

@@ -65,6 +65,14 @@ public class MySQLServer {
     public ArrayList<MySQLDataBase> getMySQLDataBases() {
         return mySQLDataBases;
     }
+    @Override
+    public String toString() {
+        return "MySQLServer{" +
+                "host='" + host + '\'' +
+                ", user='" + user + '\'' +
+                ", port=" + port +
+                '}';
+    }
 
     public static String replaceEnd(String str, String replace, String replaced) {
         int startIndex = str.indexOf(replace);

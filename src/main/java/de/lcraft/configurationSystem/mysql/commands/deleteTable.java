@@ -11,8 +11,8 @@ public class deleteTable implements Command {
         setTableName(tableName);
     }
     @Override
-    public String createSQL(MySQLDataBase mySQLDataBase) {
-        return "DROP TABLE " + getTableName();
+    public String[] createSQL(MySQLDataBase mySQLDataBase) {
+        return new String[]{"DROP TABLE " + getTableName()};
     }
 
     public String getTableName() {
