@@ -7,5 +7,5 @@ This is the ConfigurationSystem for the Lcraft API
 - MySQL Server with SQL Presets
 
 ## What comes?
-- SQL Presets
+- More SQL Presets
 - Comments Support for YAML Files
