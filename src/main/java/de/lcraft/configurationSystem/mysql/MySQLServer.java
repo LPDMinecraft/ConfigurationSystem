@@ -18,10 +18,17 @@ public class MySQLServer {
         setPassword(password);
         setMySQLDataBases(new ArrayList<>());
     }
+    public MySQLServer(int port, String user, String password) {
+        this("localhost", port, user, password);
+    }
     public MySQLServer(String host, String user, String password) {
         this(host, 3306, user, password);
     }
-    public MySQLDataBase createNewDatabase(String dataBaseName) {
+    public MySQLServer(String user, String password) {
+        this("localhost", 3306, user, password);
+    }
+
+    public MySQLDataBase connectToDatabase(String dataBaseName) {
         return new MySQLDataBase(this ,dataBaseName);
     }
 
