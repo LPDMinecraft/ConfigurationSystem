@@ -1,0 +1,13 @@
+de\lcraft\configurationSystem\yaml\saveSystem\SaveManager.class
+de\lcraft\configurationSystem\yaml\AvailableTypes.class
+de\lcraft\configurationSystem\mysql\Command.class
+de\lcraft\configurationSystem\mysql\MySQLServer.class
+de\lcraft\configurationSystem\yaml\Item.class
+de\lcraft\configurationSystem\yaml\saveSystem\SaveItem.class
+de\lcraft\configurationSystem\mysql\commands\createTable.class
+de\lcraft\configurationSystem\yaml\Config.class
+de\lcraft\configurationSystem\yaml\loadSystem\LoadItem.class
+de\lcraft\configurationSystem\mysql\commands\deleteTable.class
+de\lcraft\configurationSystem\mysql\MySQLDataBase.class
+de\lcraft\configurationSystem\yaml\saveSystem\SaveItemSorter.class
+de\lcraft\configurationSystem\yaml\loadSystem\LoadManager.class

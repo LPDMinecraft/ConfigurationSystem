@@ -4,8 +4,8 @@
 
   <name>Configuration System</name>
   <groupId>de.lcraft</groupId>
-  <artifactId>configurations</artifactId>
-  <version>1.2.0 b8</version>
+  <artifactId>configuration</artifactId>
+  <version>1.2.0 b9</version>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
