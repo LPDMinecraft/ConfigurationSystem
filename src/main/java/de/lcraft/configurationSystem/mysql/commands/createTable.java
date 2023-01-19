@@ -7,11 +7,11 @@ import java.util.ArrayList;
 
 public class createTable implements Command {
 
-    private String name;
+    private String tableName;
     private ArrayList<String[]> data;
 
-    public createTable(String name) {
-        setName(name);
+    public createTable(String tableName) {
+        setTableName(tableName);
         setData(new ArrayList<>());
     }
     public void addColumn(String id, String type) {
@@ -23,7 +23,7 @@ public class createTable implements Command {
 
     @Override
     public String createSQL(MySQLDataBase mySQLDataBase) {
-        String sql = "CREATE TABLE " + getName() + " (";
+        String sql = "CREATE TABLE " + getTableName() + " (";
 
         for(String[] c : getData()) {
             String id = c[0];
@@ -35,15 +35,15 @@ public class createTable implements Command {
         return MySQLServer.replaceEnd(sql, ",", "") + ")";
     }
 
-    public String getName() {
-        return name;
+    public String getTableName() {
+        return tableName;
     }
     public ArrayList<String[]> getData() {
         return data;
     }
 
-    private void setName(String name) {
-        this.name = name;
+    private void setTableName(String tableName) {
+        this.tableName = tableName;
     }
     private void setData(ArrayList<String[]> data) {
         this.data = data;
